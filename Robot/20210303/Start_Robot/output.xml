@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210303 23:05:27.087" rpa="false">
+<suite id="s1" name="Test" source="C:\Users\Maneerat\Downloads\QA Tester\Robot\test.robot">
+<test id="s1-t1" name="Search case">
+<kw name="เปิดเว็บ google.com">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210303 23:05:27.239" level="INFO">Opening browser 'chrome' to base url 'https://google.com/'.</msg>
+<status status="PASS" starttime="20210303 23:05:27.238" endtime="20210303 23:05:30.783"></status>
+</kw>
+<status status="PASS" starttime="20210303 23:05:27.238" endtime="20210303 23:05:30.783"></status>
+</kw>
+<kw name="ค้นหาตาม keywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>${expected_result}</arg>
+</arguments>
+<msg timestamp="20210303 23:05:30.784" level="INFO">Typing text 'Podcasts ไทย' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20210303 23:05:30.784" endtime="20210303 23:05:30.843"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210303 23:05:30.843" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210303 23:05:30.843" endtime="20210303 23:05:32.338"></status>
+</kw>
+<status status="PASS" starttime="20210303 23:05:30.784" endtime="20210303 23:05:32.338"></status>
+</kw>
+<kw name="รอผลลัพธ์">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20210303 23:05:32.339" endtime="20210303 23:05:32.350"></status>
+</kw>
+<status status="PASS" starttime="20210303 23:05:32.339" endtime="20210303 23:05:32.350"></status>
+</kw>
+<status status="PASS" starttime="20210303 23:05:27.238" endtime="20210303 23:05:32.351" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210303 23:05:27.088" endtime="20210303 23:05:32.351"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

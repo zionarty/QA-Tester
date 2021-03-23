@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210303 23:34:26.709" rpa="false">
+<suite id="s1" name="Login" source="C:\Users\Maneerat\Downloads\QA Tester\Robot\20210303\SEW_TEST\Login.robot">
+<test id="s1-t1" name="login">
+<kw name="open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210303 23:34:26.846" level="INFO">Opening browser 'chrome' to base url 'http://backend.sew.com/login'.</msg>
+<status status="PASS" starttime="20210303 23:34:26.845" endtime="20210303 23:34:29.929"></status>
+</kw>
+<status status="PASS" starttime="20210303 23:34:26.845" endtime="20210303 23:34:29.929"></status>
+</kw>
+<kw name="key username">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20210303 23:34:29.930" level="INFO">Typing text 'enova' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20210303 23:34:29.930" endtime="20210303 23:34:29.983"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20210303 23:34:29.983" level="INFO">Typing text 'maneerat33561' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20210303 23:34:29.983" endtime="20210303 23:34:30.033"></status>
+</kw>
+<status status="PASS" starttime="20210303 23:34:29.930" endtime="20210303 23:34:30.034"></status>
+</kw>
+<kw name="submit login">
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210303 23:34:30.034" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210303 23:34:30.034" endtime="20210303 23:34:30.410"></status>
+</kw>
+<status status="PASS" starttime="20210303 23:34:30.034" endtime="20210303 23:34:30.410"></status>
+</kw>
+<kw name="select pos time">
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name=pos_no</arg>
+<arg>${post_no}</arg>
+</arguments>
+<msg timestamp="20210303 23:34:30.411" level="INFO">Selecting options from selection list 'name=pos_no' by value 01.</msg>
+<status status="PASS" starttime="20210303 23:34:30.411" endtime="20210303 23:34:30.449"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210303 23:34:30.449" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210303 23:34:30.449" endtime="20210303 23:34:33.117"></status>
+</kw>
+<status status="PASS" starttime="20210303 23:34:30.411" endtime="20210303 23:34:33.117"></status>
+</kw>
+<status status="PASS" starttime="20210303 23:34:26.845" endtime="20210303 23:34:33.117" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210303 23:34:26.710" endtime="20210303 23:34:33.118"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
